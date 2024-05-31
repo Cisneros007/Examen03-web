@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  imagenWasp: string = 'assets/imagen/whatsapp.png'; 
   title = 'sistemaweb';
 }

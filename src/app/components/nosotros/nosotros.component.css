@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Añade transición */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efecto al hacer hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efecto al hacer hover */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Añade transición */
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05); /* Efecto al hacer hover en la imagen */
+}
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-title {
+  background: gray;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 10px;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  .col {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+      flex: 1 1 100%;
+  }
+}
